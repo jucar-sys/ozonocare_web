@@ -32,7 +32,7 @@ window.onscroll = () => {
 }
 
 ////////////////////// GOOGLE MAPS ///////////////////////////
-var apiMaps = 'AIzaSyBrUwCEXz9eATaFNIQgO44Fgg17QFjsDb8';
+var apiMaps = '';
 
 function initMap() {
     var latLng = {
