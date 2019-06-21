@@ -1,0 +1,403 @@
+:root {
+    --primario: #394651;
+    --secundario: #8A8C99;
+    --tercero: #CEDEE4;
+    --cuarto: #5a82a3;
+    --hoover: #2a3238;
+}
+
+@font-face {
+    font-family: 'gothamrounded-book';
+    src: url(../fonts/gothamrounded-book.otf);
+}
+
+body {
+    font-family: 'gothamrounded-book', sans-serif;
+}
+
+.txt-gris {
+    color: #394651;
+    font-weight: 900;
+}
+
+/** NAV SOCIALES **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #394651;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+
+/* HEADER */
+.encabezado {
+    background: url(../img/Duda.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed !important;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.texto-encabezado {
+    height: 100%;
+        }
+  
+  .subtitPrincipal span {
+    color: #8A8C99;
+    font-weight: 900;
+    }
+  
+  .texto-encabezado .display-4 {
+    margin-top: 4rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    }
+
+    @media (min-width: 768px){
+        .texto-encabezado .display-4 {
+            font-size: 3.4rem }
+    }
+  
+  .texto-encabezado .btn-primary {
+    margin-top: 1rem; }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #394651;
+    border-color: transparent;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #2a3238;
+    border-color: transparent;
+     }
+  
+  .telIndex {
+    margin-top: 25px;
+    font-size: 1.1rem; }
+  
+  @media (min-width: 768px) {
+    .telIndex {
+      margin-top: 35px;
+      font-size: 1.4rem; } }
+  .flecha-bajar a {
+    display: inline-block;
+    color: #fff;
+    font-size: 4rem;
+    -webkit-animation: flecha-animada 2s ease-in-out infinite;
+            animation: flecha-animada 2s ease-in-out infinite; }
+  
+  @-webkit-keyframes flecha-animada {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+    50% {
+      -webkit-transform: translateY(6px);
+              transform: translateY(6px); }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); } }
+  
+  @keyframes flecha-animada {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+    50% {
+      -webkit-transform: translateY(6px);
+              transform: translateY(6px); }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); } }
+
+
+
+/* NAVEGACION */
+.navegacion {
+    /* background-color: #CEDEE4; */
+    background-color: rgba(206, 222, 228, .7);
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #394651;
+    font-size: 1.4rem;
+    transition: all .3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #394651;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #394651;
+    border-radius: 10px;
+}
+
+.active .nav-link {
+    color: #ffffff!important;
+}
+
+.logo-nav .img-fluid {
+    max-width: 80%;
+}
+
+@media (min-width: 480px) {
+    .logo-nav .img-fluid {
+        max-width: 30%;
+    }
+}
+
+.header-scroll {
+    opacity: 0;
+    position: fixed;
+    margin-top: -300px;
+    width: 100%;
+    background-color: rgba(206, 222, 228, .7);
+    z-index: 100;
+    border-bottom: 1px solid #394651;
+    transition: all .5s ease;
+}
+
+.header-scroll.activo {
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+/* CAROUSEL */
+.carousel-info h2{
+    color: #394651;
+}
+
+
+
+/* SECTION SLOGAN */
+.nuevo-sitio p {
+    font-size: 1.6rem;
+    color: #979797;
+}
+
+.titulo span{
+    color: #5a82a3;
+}
+
+
+
+/* SERVICIOS */
+.imagen-servicio {
+    overflow: hidden;
+}
+
+.imagen-servicio img {
+    border: 6px solid #dbdada;
+    filter: grayscale(35%);
+    -webkit-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.imagen-servicio img:hover {
+    -webkit-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.servicio-info {
+    background-color: #ffffff;
+    margin-top: -6.5rem;
+}
+
+.servicio-info .btn-secondary {
+    border-radius: 0;
+    border: none;
+    background-color: #394651;
+    font-size: 1.5rem;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.servicio-info .btn-secondary:hover {
+    background-color: #2a3238;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #8A8C99;
+    color: #ffffff;
+}
+
+.cpyFooter {
+    background-color: #394651;
+}
+
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: #8A8C99;
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    display: none;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+  
+  .ir-arriba:hover,
+  .ir-arriba:focus {
+    outline: 0;
+    text-decoration: none;
+    color: #fff; }
+
+
+
+/* HERO */
+.hero {
+    background-image: url(../img/Duda_Hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 5rem;
+    right: 0;
+    background-color: #394651;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+
+
+
+/* PRODUCTOS */
+.productos .card {
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+
+.productos .card:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.productos .card a {
+    color: #000000;
+}
+
+.productos .card a:hover {
+    text-decoration: none;
+}
+
+.productos .card h4 {
+    font-size: 1.2rem;
+    color: #5a82a3;
+    font-family: 'Lato', sans-serif;
+}
+
+.productos .card p {
+    font-size: .8rem;
+    color: #131313;
+}
+
+.productos .card .precio {
+    color: #979797;
+    font-size: 1.2rem;
+}
+
+
+
+/* COLLAPSE NOSOTROS */
+#servicios .card-header {
+    background-color: #394651;
+    padding: 0;
+}
+
+#servicios .card-header .btn-link {
+    color: #ffffff;
+    font-size: 1.6rem;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#servicios .card-header .btn-link:hover {
+    background-color: #2a3238;
+}
+
+#servicios .card-body {
+    font-size: 1.2rem;
+}
+
+
+/* CUPON NOSOTROS */
+.cupon {
+    border: 3px dashed #ffffff;
+}
+
+.cupon .display-4 {
+    font-size: 2rem;
+}
