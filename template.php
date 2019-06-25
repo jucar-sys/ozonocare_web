@@ -19,7 +19,7 @@
 
             <!--Para mostrar el enlace con nombre del sitio con menú responsive--> 
             <a href="index.php" class="navbar-brand d-md-none">
-                <img src="img/azulRecurso 1.png" alt="Ozonocare">
+                <img src="img/azulRecurso1.png" alt="Ozonocare">
             </a>
 
             <!--Menú normal y responsive--> 

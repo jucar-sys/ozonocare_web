@@ -19,7 +19,7 @@
 
             <!--Para mostrar el enlace con nombre del sitio con menú responsive--> 
             <a href="index.php" class="navbar-brand d-md-none">
-                <img src="img/azulRecurso 1.png" alt="Ozonocare">
+                <img src="img/azulRecurso1.png" alt="Ozonocare">
             </a>
 
             <!--Menú normal y responsive--> 
@@ -73,7 +73,7 @@
     <div class="container-fluid p-0 d-none d-md-block">
       <div class="row no-gutters">
         <div class="col-12 hero">
-          <h2 class="text-uppercase d-none d-md-block py-2 pr-3 pl-5">Titulo Aquí</h2>
+          <h2 class="text-uppercase d-none d-md-block py-2 pr-3 pl-5">Productos</h2>
         </div>
       </div>
     </div>

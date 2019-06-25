@@ -32,15 +32,17 @@ window.onscroll = () => {
 }
 
 ////////////////////// GOOGLE MAPS ///////////////////////////
-var apiMaps = '';
+/* var apiMaps = 'APIKEY';
 
 function initMap() {
     var latLng = {
-        lat: 19.3278997,
-        lng: -99.143841
-            /* Sucursal Las flores
+        // Sucursal Las flores
             lat: 19.355364,
-            lng: -99.200027*/
+            lng: -99.200027
+
+        // Sucursal Salud 
+        // lat: 19.3278997,
+        // lng: -99.143841
     };
 
     var map = new google.maps.Map(document.getElementById('mapa'), {
@@ -50,7 +52,7 @@ function initMap() {
     });
 
     var contenido = '<h2>Ozonocare</h2>' +
-        '<h5>Matriz</h5>' +
+        '<h5>Ozonocare Belleza</h5>' +
         '<a href="http://www.ozonocare.com.mx" target="_blank">www.ozonocare.com.mx</a>';
     var informacion = new google.maps.InfoWindow({
         content: contenido
@@ -65,7 +67,7 @@ function initMap() {
     marker.addListener('click', function() {
         informacion.open(map, marker);
     });
-}
+} */
 ///////////////////////////////////////////////////////////////
 
 

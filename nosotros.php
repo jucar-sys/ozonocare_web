@@ -19,7 +19,7 @@
 
             <!--Para mostrar el enlace con nombre del sitio con menú responsive--> 
             <a href="index.php" class="navbar-brand d-md-none">
-                <img src="img/azulRecurso 1.png" alt="Ozonocare">
+                <img src="img/azulRecurso1.png" alt="Ozonocare">
             </a>
 
             <!--Menú normal y responsive--> 
@@ -88,17 +88,23 @@
 
 
     <!--------------------- CONTENIDO-PRINCIPAL -------------------->
-    <div class="container py-4">
+
+    <div class="container">
+      <h2 class="d-block text-center titulo pt-3">
+        <span class="d-block">Conoce sobre </span>nosotros
+      </h2>
+      <p class="text-justify pt-3 py-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt ipsum nostrum facere id! Mollitia quis omnis aspernatur voluptas enim magnam officia quo blanditiis nisi illum! Architecto voluptatibus nesciunt dicta? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat consequuntur velit praesentium aperiam impedit? Maiores quis quasi harum pariatur? Dolorum rerum amet quidem! Enim veritatis totam cupiditate perferendis, veniam dignissimos?</p>
+      <div class="text-center">
+        <img src="img/Duda_Hero.jpg" alt="Nosotros" class="img-nosotros img-fluid mb-4">
+      </div>
+    </div>
+
+    <div class="container pb-md-4 mb-md-4">
        <div class="row">
 
           <main class="col-lg-8">
-              <h2 class="d-block d-md-none text-center titulo">
-                <span class="d-block">Conoce sobre </span>nosotros
-              </h2>
 
-              
-
-              <div id="nosotros">
+              <div id="nosotros" class="text-justify">
 
                 <!-- CARD 1 -->
                 <div class="card mt-4 mt-lg-0">
@@ -134,7 +140,7 @@
 
                   <!-- CARD 3 -->
                   <div class="card mb-4 mb-lg-0">
-                      <div class="card-header p-0" id="valores">
+                      <div class="card-header" id="valores">
                         <h2 class="mb-0">
                           <a class="btn btn-link d-block text-left pl-4" data-toggle="collapse" data-target="#descripcion3" aria-expanded="false" aria-controls="descripcion3">
                               Valores
@@ -152,18 +158,12 @@
 
           </main><!-- .contenido-principal -->
           
-          <aside class="col-lg-4 pt-4 pt-lg-0">
-            <div class="sidebar p-3">
-              <h2 class="text-uppercase text-center mt-4">
-                nuevos clientes
+          <aside class="col-lg-4">
+            <div class="sidebar px-3 py-3 py-md-0">
+              <h2 class="d-block text-center titulo">
+                <span class="d-block">Experiencia </span>y profesionalismo
               </h2>
-              <p class="lead text-center mt-4">Recibe 20% de descuento con éste cupón:</p>
-              <div class="cupon p-4 mt-5">
-                <p class="text-uppercase text-center mb-0">
-                  <span class="display-4">20% descuento</span> <br>
-                  en todos los servicios
-                </p>
-              </div>
+              <p class="text-justify pt-3 py-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt ipsum nostrum facere id! Mollitia quis omnis aspernatur voluptas enim magnam officia quo blanditiis nisi illum! Architecto voluptatibus nesciunt dicta? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat consequuntur velit praesentium aperiam impedit? Maiores quis quasi harum pariatur? Dolorum rerum amet quidem! Enim veritatis totam cupiditate perferendis, veniam dignissimos?</p>
             </div><!-- .sidebar -->
           </aside>
        

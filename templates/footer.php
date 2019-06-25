@@ -15,13 +15,17 @@
             <p class="text-center">DATOS DE <span class="txt-gris">CONTACTO</span></p>
             <div class="row" >
               <div class="col-md-6">
-                <!--Dirección matriz-->
-                <p><span class="txt-gris">Dirección matriz:</span> División del Norte #3395, Coyoacán CDMX<br>Torre Médica HMG<br>7mo piso, consultorio 712 <br> <span class="txt-gris">Teléfono:</span> 3683-7545 <br><span class="txt-gris">Email:</span> contacto@ozonocare.com.mx</p>
+                <!--Dirección belleza-->
+                <?php
+                    include 'templates/dir-belleza.php';
+                ?>
                 <!-------------------------------------->
               </div>
               <div class="col-md-6">
-                <!--Dirección sucursal-->
-                <p><span class="txt-gris">Dirección sucursal:</span> Calle Las Flores #313, Interior 204<br>Álvaro Obregón CDMX<br>Colonia Águilas Pilares, C.P. 01710 <br> <span class="txt-gris">Teléfono:</span> 044-55-3485-1539 <br><span class="txt-gris">Email:</span> contacto@ozonocare.com.mx</p>
+                <!--Dirección salud-->
+                <?php
+                    include 'templates/dir-salud.php';
+                ?>
                 <!-------------------------------------->
               </div>
             </div>
@@ -64,6 +68,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap"></script> -->
   </body>
 </html>
 

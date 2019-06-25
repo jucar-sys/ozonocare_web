@@ -1,19 +1,8 @@
     <!-------------------- INICIO HTML Y HEAD --------------------->
 <?php
-    $titulo = "Producto";
-    // Validar URL para evitar ataques o bromas
-    if (isset( $_GET['id'] ) ) {
-      if ( filter_var( $_GET['id'], FILTER_VALIDATE_INT ) ) {
-        // Aprovechando la validación y si es correcta de una vez asignamos el ID a una variable
-        $producto_id = $_GET['id'];
-      } else {
-        header('Location: 404.php');
-        exit;
-      }
-    }
-
+    $titulo = "Contacto";
     include 'templates/head.php';
-    include 'includes/funciones.php';
+    include 'includes/funciones.php'
 ?>
     <!------------------------------------------------------------->
 
@@ -84,7 +73,7 @@
     <div class="container-fluid p-0 d-none d-md-block">
       <div class="row no-gutters">
         <div class="col-12 hero">
-          <h2 class="text-uppercase d-none d-md-block py-2 pr-3 pl-5">Producto</h2>
+          <h2 class="text-uppercase d-none d-md-block py-2 pr-3 pl-5">Contacto</h2>
         </div>
       </div>
     </div>
@@ -94,62 +83,23 @@
     <!-------------------------- NAVBAR --------------------------->
     <?php
         include 'templates/navbar.php';
-
-        //Imprime el error en pantalla en case de existir
-      /* ini_set("display_errors", "1");
-      error_reporting(E_ALL); */
-
-        // Declaramos e inicializamos una variable con lo que retorne la consulta
-        $producto = obtenerProducto($producto_id);
-
-        if ($producto->num_rows > 0) {
-        //Recorremos la variable productos que contiene la consulta
-        while($producto_obtenido = $producto->fetch_assoc() ) {
-        /* echo "<pre>";
-        var_dump($producto_obtenido);
-        echo "</pre>"; */
     ?>
     <!------------------------------------------------------------->
 
 
+
     <!--------------------- CONTENIDO-PRINCIPAL -------------------->
-    <div class="container py-4">
-       <div class="row">
-          
-          <main class="col-lg-8">
-            <img  class="img-fluid" src="img/<?php echo $producto_obtenido['imagen_completa']; ?>.jpg" alt="<?php echo $producto_obtenido['nombre']; ?>">
-              <h2 class="d-block d-md-none text-center titulo">
-                <span class=" d-block">Descripción de </span><?php echo $producto_obtenido['nombre']; ?>
-              </h2>
-              <p>
-              <?php echo $producto_obtenido['descripcion']; ?>
-              </p>
-          </main><!-- .contenido-principal -->
+    
+    <?php
+        include 'templates/contacto.php';
+    ?>
 
-          <aside class="col-lg-4 pt-4 pt-lg-0">
-            <div class="sidebar">
-              <h2 class="text-uppercase text-center my-4">
-                Descripción
-              </h2>
-              <p class="text-center"><?php echo $producto_obtenido['descripcion_corta']; ?></p>
-              <p class="text-center text-uppercase precio-prod pt-4">
-                precio <br>
-                <span>$<?php echo $producto_obtenido['precio']; ?></span>
-              </p>
-            </div><!-- .sidebar -->
-          </aside>
-
-       </div><!-- .row -->
-    </div><!-- .container -->
     <!------------------------------------------------------------>
+    
 
 
     <!------------- FOOTER, SCRIPTS y CIERRE DE HTML -------------->
     <?php
-    }
-    } else {
-      header('Location: 404.php');
-    }
         include 'templates/footer.php';
     ?>
     <!------------------------------------------------------------->

@@ -18,7 +18,13 @@ body {
 .txt-gris {
     color: #394651;
     font-weight: 900;
+    font-size: 1.1rem;
 }
+
+.mapa {
+    background-color: #8A8C99;
+    width: 100%;
+    height: 300px; }
 
 /** NAV SOCIALES **/
 .sociales ul {
@@ -247,8 +253,8 @@ body {
     -webkit-filter: grayscale(0%);
     -ms-filter: grayscale(0%);
     filter: grayscale(0%);
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
 }
 
 .servicio-info {
@@ -271,7 +277,30 @@ body {
 
 
 
+/* PARALAX CONTACTO */
+.bg-contacto {
+    background-image: url(../img/Duda_Hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
 
+@media (min-width: 992px) {
+    .bg-contacto {
+        background-size: cover;
+    }
+}
+
+.bg-contacto h3 {
+    font-size: 3.2rem;
+}
+
+.bg-contacto p {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+}
 
 
 
@@ -345,7 +374,7 @@ body {
 }
 
 .productos .card a {
-    color: #000000;
+    color: #2a3238;
 }
 
 .productos .card a:hover {
@@ -355,7 +384,6 @@ body {
 .productos .card h4 {
     font-size: 1.2rem;
     color: #5a82a3;
-    font-family: 'Lato', sans-serif;
 }
 
 .productos .card p {
@@ -370,13 +398,20 @@ body {
 
 
 
+/* NOSOTROS */
+.img-nosotros {
+    max-height: 30rem;
+    margin: o auto; 
+}
+
+
 /* COLLAPSE NOSOTROS */
-#servicios .card-header {
+#nosotros .card-header {
     background-color: #394651;
     padding: 0;
 }
 
-#servicios .card-header .btn-link {
+#nosotros .card-header .btn-link {
     color: #ffffff;
     font-size: 1.6rem;
     -webkit-transition: all .3s ease;
@@ -384,20 +419,33 @@ body {
     transition: all .3s ease;
 }
 
-#servicios .card-header .btn-link:hover {
+#nosotros .card-header .btn-link:hover {
     background-color: #2a3238;
 }
 
-#servicios .card-body {
+#nosotros .card-body {
     font-size: 1.2rem;
 }
 
 
-/* CUPON NOSOTROS */
-.cupon {
-    border: 3px dashed #ffffff;
+
+/* 404 */
+.rectangulo {
+    margin: 50px auto 50px auto;
+    width: 70%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px 0;
+    -webkit-box-shadow: 0px 15px 43px 16px rgba(196,194,196,1);
+    -moz-box-shadow: 0px 15px 43px 16px rgba(196,194,196,1);
+    box-shadow: 0px 15px 43px 16px rgba(196,194,196,1);
 }
 
-.cupon .display-4 {
-    font-size: 2rem;
+.rectangulo img {
+    margin: 50px auto 50px auto;
+    max-width: 30%;
+}
+
+.rectangulo p {
+    font-size: 2.5rem;
 }
