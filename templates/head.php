@@ -41,6 +41,9 @@
     <link rel="application/x-font-otf" href="fonts/gothamrounded-book.otf">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/styles.css">
 
     <title><?php echo $titulo?> | Clínica de belleza y bienestar</title>

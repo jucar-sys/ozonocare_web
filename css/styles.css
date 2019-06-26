@@ -16,9 +16,8 @@ body {
 }
 
 .txt-gris {
-    color: #394651;
+    color: #5a82a3;
     font-weight: 900;
-    font-size: 1.1rem;
 }
 
 .mapa {
@@ -44,7 +43,7 @@ body {
     content: '\f08e';
     -webkit-font-smoothing: antialiased;
     font-size: 2rem;
-    color: #394651;
+    color: #CEDEE4;
 }
 .sociales ul li a[href*="facebook.com"]::before{
     content: '\f230';
@@ -303,18 +302,69 @@ body {
 }
 
 
+/* TRATAMIENTOS */
+.tratamientos {
+    background-color: #8A8C99;
+    color: #ffffff;
+}
+
+.slick-arrow::before {
+    font-family: 'FontAwesome';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #394651;
+}
+
+.slick-prev::before {
+    content: '\f0a8'!important;
+}
+
+.slick-next::before {
+    content: '\f0a9'!important;
+}
+
+
+
+/* ENFERMEDADES */
+.link-enfermedades ul li {
+    list-style: none;
+}
+
+.link-enfermedades ul a li i {
+    font-size: 2rem;
+}
+
+.link-enfermedades ul li h4 {
+    text-decoration: none;
+    color: #5a82a3;
+}
+
+.link-enfermedades ul li p {
+    text-decoration: none;
+    color: #2a3238;
+}
+
+
+
+/* INDICACIONES */
+.indicaciones {
+    background-color: #8A8C99;
+    color: #ffffff;
+}
+
+
 
 
 
 
 /* FOOTER */
 .footer {
-    background-color: #8A8C99;
-    color: #ffffff;
+    background-color: #394651;
+    color: #ffffff!important;
 }
 
 .cpyFooter {
-    background-color: #394651;
+    background-color: #2a3238;
 }
 
 .ir-arriba {
@@ -352,11 +402,9 @@ body {
     right: 0;
     background-color: #394651;
     color: #ffffff;
-    font-family: 'Raleway', sans-serif;
     font-size: 2.4rem;
     font-weight: 900;
 }
-
 
 
 
@@ -392,7 +440,7 @@ body {
 }
 
 .productos .card .precio {
-    color: #979797;
+    color: #8A8C99;
     font-size: 1.2rem;
 }
 

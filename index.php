@@ -168,53 +168,55 @@
 
 
     <!------------------------ SERVICIOS ---------------------------->
-    <div class="container">
-      <div class="row">
+    <main>
+      <div class="container">
+        <div class="row">
 
-        <div class="col-12 col-md-4 text-center mb-4">
-          <div class="imagen-servicio">
-            <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
-            <div class="row no-gutters justify-content-center">
-              <div class="col-md-10 servicio-info pt-3">
-                <h2 class="text-center py-3 titulo">
-                  <span class="d-block">Servicios de </span>ozono médico
-                </h2>
-                <a href="servicios.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+          <div class="col-12 col-md-4 text-center mb-4">
+            <div class="imagen-servicio">
+              <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
+              <div class="row no-gutters justify-content-center">
+                <div class="col-md-10 servicio-info pt-3">
+                  <h2 class="text-center py-3 titulo">
+                    <span class="d-block">Servicios de </span>ozono médico
+                  </h2>
+                  <a href="servicios.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+                </div>
               </div>
-            </div>
-          </div><!-- .imagen-servicio-->
-        </div><!-- .grid-->
+            </div><!-- .imagen-servicio-->
+          </div><!-- .grid-->
 
-        <div class="col-12 col-md-4 text-center mb-4">
-          <div class="imagen-servicio">
-            <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
-            <div class="row no-gutters justify-content-center">
-              <div class="col-md-10 servicio-info pt-3">
-                <h2 class="text-center py-3 titulo">
-                  <span class="d-block">Servicios de </span>belleza
-                </h2>
-                <a href="servicios.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+          <div class="col-12 col-md-4 text-center mb-4">
+            <div class="imagen-servicio">
+              <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
+              <div class="row no-gutters justify-content-center">
+                <div class="col-md-10 servicio-info pt-3">
+                  <h2 class="text-center py-3 titulo">
+                    <span class="d-block">Servicios de </span>belleza
+                  </h2>
+                  <a href="servicios.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+                </div>
               </div>
-            </div>
-          </div><!-- .imagen-servicio-->
-        </div><!-- .grid-->
+            </div><!-- .imagen-servicio-->
+          </div><!-- .grid-->
 
-        <div class="col-12 col-md-4 text-center mb-4">
-          <div class="imagen-servicio">
-            <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
-            <div class="row no-gutters justify-content-center">
-              <div class="col-md-10 servicio-info pt-3">
-                <h2 class="text-center py-3 titulo">
-                  <span class="d-block">Nuestros </span>productos
-                </h2>
-                <a href="productos.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+          <div class="col-12 col-md-4 text-center mb-4">
+            <div class="imagen-servicio">
+              <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
+              <div class="row no-gutters justify-content-center">
+                <div class="col-md-10 servicio-info pt-3">
+                  <h2 class="text-center py-3 titulo">
+                    <span class="d-block">Nuestros </span>productos
+                  </h2>
+                  <a href="productos.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+                </div>
               </div>
-            </div>
-          </div><!-- .imagen-servicio-->
-        </div><!-- .grid-->
+            </div><!-- .imagen-servicio-->
+          </div><!-- .grid-->
 
-      </div><!-- .row-->
-    </div><!-- .container-->
+        </div><!-- .row-->
+      </div><!-- .container-->
+    </main>
     <!--------------------------------------------------------------->
     
 
@@ -235,45 +237,118 @@
 
 
     <!--------------------------------------------------------->
-  <main>
-    <section class="ozono-info py-1" id="ozono-info">
+    <section class="py-1" id="ozono-info">
         <div class="container">
-            <div class="row contenedor-flex">
-                <div class="col-md-4 col-xl-5 alineacion-flex">
-                  <div class="titulos-ozono-info">
-                    <i class=" wow rollIn fa fa-question-circle" aria-hidden="true" data-wow-delay=".4s"></i>
-                    <h2>¿Qué es y qué hace el <span class="txt-azul">ozono</span>?</h2>
-                  </div>
-                  <p class="divAcord">El <span class="txt-azul">ozono</span> es un compuesto químico. Su nombre viene de griego ozein que significa “oler”, y fue descubierto en 1840. Debido a que es un agente oxidante extremadamente poderoso y un desinfectante altamente efectivo, se utiliza en todo el mundo para destruir gérmenes en instalaciones de tratamiento de agua, proporcionando así agua potable.</p>
-                </div>
-                <div class="col-md-8 col-xl-9 alineacion-flex">
-                  <div class="titulos-ozono-info">
-                    <i class="wow rollIn fa fa-check-circle" aria-hidden="true" data-wow-delay=".6s"></i>
-                    <h2>Beneficios de la <span class="txt-azul">ozonoterapia</span></h2>
-                  </div>
+            <div class="row ozono-info">
+
+                <div class="col-md-4">
+                    <h2 class="text-center py-3 titulo">
+                      <span class="d-block">¿Qué es y qué hace el</span> ozono?
+                    </h2>
+
+                  <p class="divAcord">El <span class="txt-gris">ozono</span> es un compuesto químico. Su nombre viene de griego ozein que significa “oler”, y fue descubierto en 1840. Debido a que es un agente oxidante extremadamente poderoso y un desinfectante altamente efectivo, se utiliza en todo el mundo para destruir gérmenes en instalaciones de tratamiento de agua, proporcionando así agua potable.</p>
+                </div> <!-- .col-md-4 -->
+
+                <div class="col-md-4">
+                    <h2 class="text-center py-3 titulo">
+                      <span class="d-block">Beneficios de la</span> ozonoterapia
+                    </h2>
+
                   <p class="divAcord">El ozono médico es altamente reconocido por eliminar bacterias, hongos y la multiplicación de virus, por eso es utilizado para desinfectar heridas o para tratar enfermedades producidas bacterial o viralmente.
                     Cuando se administran concentraciones bajas de ozono, ayuda al organismo a funcionar de manera normal con sus propias defensas de manera efectiva.
                   </p>
-                </div>
-                <div class="col-md-12 col-xl-12 alineacion-flex">
-                  <div class="titulos-ozono-info">
-                    <i class="wow rollIn fa fa-child" aria-hidden="true" data-wow-delay=".8s"></i>
-                    <h2>¿Es una medicina <span class="txt-azul">alternativa</span>?</h2>
-                  </div>
+                </div><!-- .col-md-4 -->
+
+                <div class="col-md-4">
+                    <h2 class="text-center py-3 titulo">
+                      <span class="d-block">¿Es una medicina</span> alternativa?
+                    </h2>
+
                     <p class="divAcord">La ozonoterapia es considerada una medicina natural, no tiene consecuencias colaterales con otros tratamientos; es coadyuvante a cualquier otra aplicación médica.
                     </p>
-                </div>
-            </div>
-        </div>
+                </div><!-- .col-md-4 -->
+
+            </div><!-- .row -->
+        </div><!-- .container -->
     </section>
-  </main>
 <!--------------------------------------------------------->
 
 <!--------------------------------------------------------->
-    <section class="ultimos-proyectos fondo-color py-1">
-        <div class="container">
-            <h2 class="text-xs-center font-weight-bold">Tratamiento externo</h2>
-            <p style="text-align:center; padding:10px 0px;">Ofrecemos tratamientos externos como, autohemoterapia mayor, autohemoterapia menor, insuflación (vía rectal, ótica o vaginal) o inyección de ozono (intramuscular, subcutánea, intraauricular).</p>
+    <section class="tratamientos py-1">
+      <div class="container mt-3">
+        <h2 class="text-center py-3 titulo">
+          <span class="d-block">Tratamiento </span>externo
+        </h2>
+        <p class="py-2">Ofrecemos tratamientos externos como, autohemoterapia mayor, autohemoterapia menor, insuflación (vía rectal, ótica o vaginal) o inyección de ozono (intramuscular, subcutánea, intraauricular).</p>
+
+        <div class="autoplay"> 
+          
+          <div class="card m-3">
+              <a href="servicios.php">
+                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
+                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                </div><!-- .card-body -->
+              </a>   
+            </div><!-- .card -->
+
+            <div class="card m-3">
+              <a href="servicios.php">
+                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
+                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                </div><!-- .card-body -->
+              </a>   
+            </div><!-- .card -->
+
+            <div class="card m-3">
+              <a href="servicios.php">
+                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
+                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                </div><!-- .card-body -->
+              </a>   
+            </div><!-- .card -->
+
+            <div class="card m-3">
+              <a href="servicios.php">
+                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
+                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                </div><!-- .card-body -->
+              </a>   
+            </div><!-- .card -->
+
+            <div class="card m-3">
+              <a href="servicios.php">
+                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
+                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                </div><!-- .card-body -->
+              </a>   
+            </div><!-- .card -->
+
+            <div class="card m-3">
+              <a href="servicios.php">
+                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
+                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                </div><!-- .card-body -->
+              </a>   
+            </div><!-- .card -->
+
+        </div><!-- .center -->
+
+    </div><!-- .container -->
+
+        <!-- <div class="container">
+            
 
             <div class="owl-carousel">
                 <a href="#" data-toggle="modal" data-target="#terapia1">
@@ -296,105 +371,96 @@
                     <img src="images/foto5.jpeg" alt="Inyección Ozono">
                 </a>
             </div>
-        </div>
+        </div> -->
     </section>
 <!--------------------------------------------------------->
 
 <!--------------------------------------------------------->
-    <section class="tu-mejor-eleccion py-1">
+    <section class="enfermedades py-4 my-4">
         <div class="container">
 
-            <h2 class="h3 text-xs-center font-weight-bold">Enfermedades</h2>
-            <p class="text-xs-center" style="padding:15px 0px">
+            <h2 class="text-center font-weight-bold txt-gris">Enfermedades</h2>
+            <p class="text-center py-4">
               Existe un gran número de condiciones patológicas que pueden ser influenciadas positivamente o incluso sanadas por el ozono. Naturalmente, y como ocurre con cualquier forma de tratamiento médico, no se puede otorgar un 100% de posibilidades de que la ozonoterapia aliviará la condición para la que se ha aplicado. Las enfermedades que pueden ser influenciadas o sanadas por el ozono son la siguientes:
             </p>
 
-            <div class="row">
-                <ul class="col-xs-6 col-lg-4 text-xs-center text-lg-left">
-                  <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp1">
+            <div class="row link-enfermedades">
+                <ul class="col-sm-6 col-lg-4 text-center">
+                  <a href="#" data-toggle="modal" data-target="#modalApp1">
                     <li class="wow pulse" data-wow-delay=".3s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
 
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-left text-md-left">
                             <h4>Trastornos circulatorios</h4>
                             <p class="hidden-md-down">El ozono muestra gran eficacia en los trastornos circulatorios arteriales, caracterizados por una sensación de pesadez y frio, y/o dolores en las piernas...</p>
                         </div>
                     </li>
                     </a>
 
-                    <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp2">
+                    <a href="#" data-toggle="modal" data-target="#modalApp2">
                     <li class="wow pulse" data-wow-delay=".7s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-left">
                             <h4>Cancer</h4>
                             <p class="hidden-md-down">En este contexto, debe enfatizarse que el ozono no es curativo, es solo una medida complementaria aplicada además de los métodos estandarizados. ...</p>
                         </div>
                     </li>
                   </a>
 
-                  <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp3">
+                  <a href="#" data-toggle="modal" data-target="#modalApp3">
                     <li class="wow pulse" data-wow-delay="1.1s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-left">
                             <h4>Lesiones infectadas</h4>
                             <p class="hidden-md-down">En ulceras “de pierna abierta”, lesiones por permanecer en cama y en quemaduras, se ha encontrado que son tratadas con éxito por el ozono ...</p>
                         </div>
                     </li>
                   </a>
 
-                  <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp4">
+                  <a href="#" data-toggle="modal" data-target="#modalApp4">
                     <li class="wow pulse" data-wow-delay="1.5s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-left">
                             <h4>Geriatría</h4>
                             <p class="hidden-md-down">Gracias a su capacidad de revitalización general, el ozono se puede usar con éxito en casos de concentración pobre, olvidos, reducción general del...</p>
                         </div>
                     </li>
                   </a>
-                </ul>
+                </ul><!-- .col-sm-6 -->
 
-                <div class="wow pulse hidden-md-down col-lg-4 centrar-imagen" data-wow-delay=".6s">
-                  <a href="enfermedades.php">
-                    <img class="wow pulse animated imgCentral" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" src="images/trisquelLogo4.png" alt="Mundo movil">
+                <div class="wow pulse d-none d-lg-block col-lg-4 text-center align-self-center" data-wow-delay=".6s">
+                  <a href="servicios.php">
+                    <img class="wow pulse animated img-fluid" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" src="img/trisquelLogo4.png" alt="Ozonocare">
                   </a>
-                    <a data-scroll href="enfermedades.php" class="btn-hov btn btn-primary btn-lg" aria-hidden="true">Ver mas...</a>
                 </div>
 
-                <ul class="col-xs-6 col-lg-4 text-xs-center text-lg-right">
-                  <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp5">
+                <ul class="col-sm-6 col-lg-4 text-center">
+                  <a href="#" data-toggle="modal" data-target="#modalApp5">
                     <li class="wow pulse" data-wow-delay=".5s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-right">
                             <h4>Degeneración macular</h4>
                             <p class="hidden-md-down">El ozono también se usa para ejercer una influencia positiva en la vista deficiente o pobre (agudeza visual deficiente o en decremento)...</p>
                         </div>
                     </li>
                   </a>
 
-                  <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp6">
+                  <a href="#" data-toggle="modal" data-target="#modalApp6">
                     <li class="wow pulse" data-wow-delay=".9s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-right">
                             <h4>Condiciones intestinales</h4>
                             <p class="hidden-md-down">Condiciones inflamatorias del intestino grueso (colitis) el intestino delgado, fístulas y proctitis (inflamación en el recto)...</p>
                         </div>
                     </li>
                   </a>
 
-                  <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp7">
+                  <a href="#" data-toggle="modal" data-target="#modalApp7">
                     <li class="wow pulse" data-wow-delay="1.3s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-right">
                             <h4>Enfermedades por virus</h4>
                             <p class="hidden-md-down">Una serie de ensayos clínicos y de estudios farmacológicos han sido capaces de demostrar el buen éxito, en porcentaje del tratamiento de ozono ...</p>
                         </div>
                     </li>
                   </a>
 
-                  <a class="linkAplicaciones" href="#" data-toggle="modal" data-target="#modalApp8">
+                  <a href="#" data-toggle="modal" data-target="#modalApp8">
                     <li class="wow pulse" data-wow-delay="1.7s">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        <div class="contenedor-eleccion">
+                        <div class="contenedor-eleccion text-md-right">
                             <h4>Reumatismo / Artritis</h4>
                             <p class="hidden-md-down">En el complejo total de las condiciones “reumáticas/artríticas”, las cuales están relacionadas todas con el esqueleto y con el sistema locomotor ...</p>
                         </div>
@@ -402,18 +468,21 @@
                   </a>
 
                 </ul>
-            </div>
-        </div>
-    </section>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .enfermedades -->
     <!--------------------------------------------------------->
 
 
     <!--------------------------------------------------------->
-    <article class="ozono-noticias py-1">
+    <article class="indicaciones py-1">
         <div class="container">
-            <div class="row contenedor-flex">
-              <div class="senado divAcord">
-                <h2 class="h3 text-xs-center font-weight-bold">Para aplicar <span class="txt-gris">Ozonoterapia</span></h2>
+            <div class="row">
+
+              <div class="col-md-6">
+                <h2 class="text-center py-3 titulo">
+                  <span class="d-block">Para aplicar </span>Ozonoterapia
+                </h2>
                 <p data-wow-delay=".5s">Se realizará una historia clínica completa para conocer si el paciente es candidato, al mismo tiempo se solicitan exámenes de laboratorio enfocados en su padecimiento. Una vez siendo candidato se indica para:</p>
 
                 <ul>
@@ -429,10 +498,12 @@
                   <li>Profilaxis múltiple para combatir el estrés</li>
                   <li>Terapia coadyuvante en el tratamiento del cáncer</li>
                 </ul>
-                <!--<img class="img-noticias" src="images/senado.jpg" alt="Senado">-->
-              </div>
-              <div class="experiencia divAcord">
-                <h2 class="h3 text-xs-center font-weight-bold">Contraindicaciones de <span class="txt-gris">Ozonoterapia</span></h2>
+              </div><!-- .col-md-6 -->
+
+              <div class="col-md-6">
+                <h2 class="text-center py-3 titulo">
+                  <span class="d-block">Contraindicaciones de </span>Ozonoterapia
+                </h2>
                 <p>No se han descrito efectos secundarios provocados por el ozono. Los únicos efectos secundarios detectados normalmente han sido derivados de la técnica de trasfusión. Sin embargo, se contraindica en los siguientes casos:</p>
                 <ul>
                   <li>Hipertiroidismo (no controlado)</li>
@@ -446,11 +517,11 @@
                   <li>Trastornos circulatorios, como vértigo, sofocos, etc.</li>
                   <li>Reacciones alérgicas (generalmente causadas por medicamentos coadyuvantes o anticoagulantes utilizados)</li>
                 </ul>
-                <!--<img class="img-noticias" src="images/terapia.jpg" alt="experiencia">-->
-              </div>
-            </div>
-        </div>
-    </article>
+              </div><!-- .col-md-6 -->
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </article><!-- .inidicaciones -->
     <!--------------------------------------------------------->
 
 
