@@ -276,7 +276,7 @@
 <!--------------------------------------------------------->
     <section class="tratamientos py-1">
       <div class="container mt-3">
-        <h2 class="text-center py-3 titulo">
+        <h2 class="text-center py-3 titulo-2">
           <span class="d-block">Tratamiento </span>externo
         </h2>
         <p class="py-2">Ofrecemos tratamientos externos como, autohemoterapia mayor, autohemoterapia menor, insuflación (vía rectal, ótica o vaginal) o inyección de ozono (intramuscular, subcutánea, intraauricular).</p>
@@ -480,7 +480,7 @@
             <div class="row">
 
               <div class="col-md-6">
-                <h2 class="text-center py-3 titulo">
+                <h2 class="text-center py-3 titulo-2">
                   <span class="d-block">Para aplicar </span>Ozonoterapia
                 </h2>
                 <p data-wow-delay=".5s">Se realizará una historia clínica completa para conocer si el paciente es candidato, al mismo tiempo se solicitan exámenes de laboratorio enfocados en su padecimiento. Una vez siendo candidato se indica para:</p>
@@ -501,7 +501,7 @@
               </div><!-- .col-md-6 -->
 
               <div class="col-md-6">
-                <h2 class="text-center py-3 titulo">
+                <h2 class="text-center py-3 titulo-2">
                   <span class="d-block">Contraindicaciones de </span>Ozonoterapia
                 </h2>
                 <p>No se han descrito efectos secundarios provocados por el ozono. Los únicos efectos secundarios detectados normalmente han sido derivados de la técnica de trasfusión. Sin embargo, se contraindica en los siguientes casos:</p>

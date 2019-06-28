@@ -32,12 +32,12 @@
         $email_message .= "Nombre: " . $nombre . "\n";
         $email_message .= "E-mail: " . $email . "\n";
         $email_message .= "Telefono: " . $telefono . "\n";
-        $email_message .= "Interesado/a en: " . $interes . "\n"
+        $email_message .= "Interesado/a en: " . $interes . "\n";
         $email_message .= "Mensaje: " . $mensaje . "\n\n";
 
         //Ahora se envía el e-mail usando la función mail() de PHP
         mail($email_to, $email_subject, $email_message);
 
-        header ("Location: confirmacion.php");
+        header ("Location: index.php");
     }
 ?>
