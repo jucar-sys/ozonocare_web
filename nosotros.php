@@ -93,7 +93,7 @@
       <h2 class="d-block text-center titulo pt-3">
         <span class="d-block">Conoce sobre </span>nosotros
       </h2>
-      <p class="text-justify pt-3 py-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt ipsum nostrum facere id! Mollitia quis omnis aspernatur voluptas enim magnam officia quo blanditiis nisi illum! Architecto voluptatibus nesciunt dicta? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat consequuntur velit praesentium aperiam impedit? Maiores quis quasi harum pariatur? Dolorum rerum amet quidem! Enim veritatis totam cupiditate perferendis, veniam dignissimos?</p>
+      <p class="text-justify pt-3 py-md-4">En <span class="txt-gris">Ozonocare</span> nos comprometemos en brindar todos los beneficios de la ozonoterapia, de manera efectiva y segura. Contamos con especialistas altamente calificados en la materia, y equipo con tecnología de punta, en donde nuestro principal objetivo es reparar y optimizar la función celular.</p>
       <div class="text-center">
         <img src="img/Duda_Hero.jpg" alt="Nosotros" class="img-nosotros img-fluid mb-4">
       </div>
@@ -116,8 +116,8 @@
                     </h2>
                   </div><!-- #mision -->
                   <div id="descripcion1" class="collapse show" aria-labelledby="mision" data-parent="#mision">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam fugit dolorum pariatur numquam, modi voluptate ad molestias. Nam, voluptates totam minus magnam dolorum possimus nihil ducimus. Adipisci, voluptatum explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eius facere odit et minus cupiditate beatae consequuntur ea, ipsam, possimus suscipit nam quo magnam quis ab corporis enim eum voluptate.
+                    <div class="card-body animated fadeIn">
+                        El equipo de OZONOCARE tiene como misión el mejorar la calidad de vida de los pacientes a través de la prevención de deterioro del organismo usando métodos naturales y no invasivos.
                     </div>
                   </div>
                 </div><!-- .card -->
@@ -132,8 +132,8 @@
                       </h2>
                     </div><!-- #vision -->
                     <div id="descripcion2" class="collapse" aria-labelledby="vision" data-parent="#vision">
-                      <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam fugit dolorum pariatur numquam, modi voluptate ad molestias. Nam, voluptates totam minus magnam dolorum possimus nihil ducimus. Adipisci, voluptatum explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eius facere odit et minus cupiditate beatae consequuntur ea, ipsam, possimus suscipit nam quo magnam quis ab corporis enim eum voluptate.
+                      <div class="card-body animated fadeIn">
+                          El envejecimiento y deterioro del organismo humano susceptible de ser detenido y casi siempre revertido en base a cuidados naturales poco invasivos, siendo nuestra visión la que hace mucho se pregona “mente sana en cuerpo sano”.
                       </div>
                     </div>
                   </div><!-- .card -->
@@ -148,8 +148,8 @@
                         </h2>
                       </div><!-- #valores -->
                       <div id="descripcion3" class="collapse" aria-labelledby="valores" data-parent="#valores">
-                        <div class="card-body">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam fugit dolorum pariatur numquam, modi voluptate ad molestias. Nam, voluptates totam minus magnam dolorum possimus nihil ducimus. Adipisci, voluptatum explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eius facere odit et minus cupiditate beatae consequuntur ea, ipsam, possimus suscipit nam quo magnam quis ab corporis enim eum voluptate.
+                        <div class="card-body animated fadeIn">
+                            A partir del juramento Hipocrático, podemos decir que los valores que nos sustentan son los mismos que inspiraron este juramento y que deberían de regir toda práctica médica.
                         </div>
                       </div>
                     </div><!-- .card -->
@@ -163,7 +163,7 @@
               <h2 class="d-block text-center titulo">
                 <span class="d-block">Experiencia </span>y profesionalismo
               </h2>
-              <p class="text-justify pt-3 py-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt ipsum nostrum facere id! Mollitia quis omnis aspernatur voluptas enim magnam officia quo blanditiis nisi illum! Architecto voluptatibus nesciunt dicta? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat consequuntur velit praesentium aperiam impedit? Maiores quis quasi harum pariatur? Dolorum rerum amet quidem! Enim veritatis totam cupiditate perferendis, veniam dignissimos?</p>
+              <p class="text-justify pt-3 py-md-4">Más de 30 años en el campo de la medicina preventiva nos avalan como una empresa que en base a la dirección de la Dra. Peruyero seguirá fielmente la ética médica para brindar ayuda y el mejor servicio a quien acuda a nosotros.</p>
             </div><!-- .sidebar -->
           </aside>
        

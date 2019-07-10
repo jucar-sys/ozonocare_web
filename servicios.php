@@ -83,12 +83,60 @@
     <!-------------------------- NAVBAR --------------------------->
     <?php
         include 'templates/navbar.php';
+        $var = $_GET['variable'];
     ?>
     <!------------------------------------------------------------->
 
+    <?php
+        if ( $var == 'belleza' ) {
+        
+            include 'templates/serv_belleza.php';
 
-    
+         } elseif ($var == 'salud') {
 
+            include 'templates/serv_salud.php';
+
+        } else {
+
+            include 'templates/serv_belleza.php';
+            include 'templates/paralax_contacto.php';
+            include 'templates/serv_salud.php';
+
+        }
+    ?>
+
+    <!-- Modal Contacto -->
+    <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div><!-- .modal-header -->
+                  
+                  <div class="modal-body">
+                      <div class="row">
+                          <div class="col-md-12">
+                            
+                          <h2 class="d-block text-center titulo">
+                            <span class="d-block">Envía el </span>formulario
+                          </h2>
+
+                            <!-- FORMULARIO -->
+                            <?php
+                                include 'templates/form-contacto.php';
+                            ?>
+                            <!---------------->
+
+                          </div><!-- .col-md-12 -->
+                      </div><!-- .row -->
+                  </div><!-- .modal-body -->
+
+              </div><!-- .modal-content -->
+          </div><!-- .modal-dialog -->
+      </div><!-- .modal -->
 
     <!------------- FOOTER, SCRIPTS y CIERRE DE HTML -------------->
     <?php

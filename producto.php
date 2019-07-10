@@ -100,7 +100,7 @@
       error_reporting(E_ALL); */
 
         // Declaramos e inicializamos una variable con lo que retorne la consulta
-        $producto = obtenerProducto($producto_id);
+        $producto = obtenerProductoBelleza($producto_id);
 
         if ($producto->num_rows > 0) {
         //Recorremos la variable productos que contiene la consulta

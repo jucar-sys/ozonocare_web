@@ -123,8 +123,8 @@ function initMap() {
         // Validar cada campo y prevenir que se envie
         var validation = Array.prototype.filter.call(forms, function(form) {
         form.addEventListener('submit', function(event) {          
-            event.preventDefault();
             if (form.checkValidity() === false) {
+                event.preventDefault();
                 event.stopPropagation();
             } else {
                 // Mostrar algo en el dom

@@ -35,6 +35,13 @@
     <meta name="description" content="Clínica de Belleza y Ozonoterapia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php
+        if($titulo == "Confirmación"){
+    ?>
+    <meta HTTP-EQUIV="REFRESH" CONTENT="3;URL=http://www.ozonocare.com.mx">    
+    <?php
+        }
+    ?>
     <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="application/x-font-otf" href="fonts/gothamrounded-bold.otf">

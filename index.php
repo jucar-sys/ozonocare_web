@@ -43,7 +43,7 @@
                                     <a class="nav-link" href="nosotros.php">Nosotros</a>
                                 </li>
                                 <li class="nav-item <?php echo 'servicios' === $pagina ? 'active' : '' ?>">
-                                    <a class="nav-link" href="servicios.php">Servicios</a>
+                                    <a class="nav-link" href="servicios.php?variable=ambos">Servicios</a>
                                 </li>
                                 <li class="nav-item <?php echo 'productos' === $pagina ? 'active' : '' ?>">
                                 <a class="nav-link" href="productos.php">Productos</a>
@@ -102,7 +102,7 @@
     <!------------------------------------------------------------->
 
     <!--------------------------- SLIDER -------------------------->
-    <div class="container mt-3">
+    <div id="ozono-info" class="container mt-3">
         <div class="row">
             <div class="col-12">
                 <div id="slider" class="carousel slide" data-ride="carousel">
@@ -127,7 +127,7 @@
                       <div class="carousel-caption d-none d-md-block carousel-info">
                           <h2>Masajes relajantes</h2>
                           <p>Ven y aprovecha el 20% de descuento en masajes</p>
-                          <a href="servicios.php" class="btn btn-primary">Ver mas</a>
+                          <a href="servicios.php?variable=belleza" class="btn btn-primary">Ver mas</a>
                         </div>
                     </div><!-- .carousel-item -->
                     <div class="carousel-item">
@@ -135,7 +135,7 @@
                       <div class="carousel-caption d-none d-md-block carousel-info">
                           <h2>2X1 en todos los servicios</h2>
                           <p>2X1 en todos los servicios todo el més de mayo</p>
-                          <a href="servicios.php" class="btn btn-primary">Ver mas</a>
+                          <a href="servicios.php?variable=salud" class="btn btn-primary">Ver mas</a>
                         </div>
                     </div><!-- .carousel-item -->
                   </div><!-- .carousel-inner -->
@@ -178,23 +178,9 @@
               <div class="row no-gutters justify-content-center">
                 <div class="col-md-10 servicio-info pt-3">
                   <h2 class="text-center py-3 titulo">
-                    <span class="d-block">Servicios de </span>ozono médico
-                  </h2>
-                  <a href="servicios.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
-                </div>
-              </div>
-            </div><!-- .imagen-servicio-->
-          </div><!-- .grid-->
-
-          <div class="col-12 col-md-4 text-center mb-4">
-            <div class="imagen-servicio">
-              <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
-              <div class="row no-gutters justify-content-center">
-                <div class="col-md-10 servicio-info pt-3">
-                  <h2 class="text-center py-3 titulo">
                     <span class="d-block">Servicios de </span>belleza
                   </h2>
-                  <a href="servicios.php" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+                  <a href="servicios.php?variable=belleza" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
                 </div>
               </div>
             </div><!-- .imagen-servicio-->
@@ -214,6 +200,20 @@
             </div><!-- .imagen-servicio-->
           </div><!-- .grid-->
 
+          <div class="col-12 col-md-4 text-center mb-4">
+            <div class="imagen-servicio">
+              <img src="img/Duda.jpg" alt="Servicio Uno" class="img-fluid">
+              <div class="row no-gutters justify-content-center">
+                <div class="col-md-10 servicio-info pt-3">
+                  <h2 class="text-center py-3 titulo">
+                    <span class="d-block">Servicios de </span>ozono médico
+                  </h2>
+                  <a href="servicios.php?variable=salud" class="btn btn-secondary btn-block text-uppercase py-2">Ver mas</a>
+                </div>
+              </div>
+            </div><!-- .imagen-servicio-->
+          </div><!-- .grid-->
+
         </div><!-- .row-->
       </div><!-- .container-->
     </main>
@@ -221,15 +221,9 @@
     
 
     <!------------------------ PARALAX CONTACTO ----------------------------->
-    <div class="bg-contacto container-fluid py-5">
-        <div class="row justify-content-center">
-        <div class="col-md-8 text-center ">
-            <h3 class="text-uppercase">¿Tienes dudas?</h3>
-            <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quas itaque modi facere voluptatum blanditiis? Magnam delectus adipisci totam, vero eius nisi nihil. Expedita delectus at eaque qui dolores nemo!</p>
-            <a href="contacto.php" class="btn btn-primary btn-lg">Solicita información</a>
-        </div><!-- .grid -->
-        </div><!-- .row -->
-    </div><!-- .bg-citas -->
+    <?php
+        include 'templates/paralax_contacto.php';
+    ?>
     <!------------------------------------------------------------>
 
 
@@ -284,61 +278,37 @@
         <div class="autoplay"> 
           
           <div class="card m-3">
-              <a href="servicios.php">
-                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+              <a href="#" data-toggle="modal" data-target="#terapia2">
+                <img src="img/foto7.jpeg" class="card-img-top" alt="Servicio">
                 <div class="card-body">
-                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
-                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                  <h4 class="card-title text-center titulo">Auto-hemoterapia menor</h4>
                 </div><!-- .card-body -->
               </a>   
             </div><!-- .card -->
 
             <div class="card m-3">
-              <a href="servicios.php">
-                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+              <a href="#" data-toggle="modal" data-target="#terapia3">
+                <img src="img/foto3.jpeg" class="card-img-top" alt="Servicio">
                 <div class="card-body">
-                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
-                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                  <h4 class="card-title text-center">Insuflación</h4>
                 </div><!-- .card-body -->
               </a>   
             </div><!-- .card -->
 
             <div class="card m-3">
-              <a href="servicios.php">
-                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+              <a href="#" data-toggle="modal" data-target="#terapia4">
+                <img src="img/foto5.jpeg" class="card-img-top" alt="Servicio">
                 <div class="card-body">
-                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
-                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                  <h4 class="card-title text-center">Inyección de ozono</h4>
                 </div><!-- .card-body -->
               </a>   
             </div><!-- .card -->
 
             <div class="card m-3">
-              <a href="servicios.php">
-                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
+              <a href="#" data-toggle="modal" data-target="#terapia1">
+                <img src="img/foto6.jpeg" class="card-img-top" alt="Servicio">
                 <div class="card-body">
-                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
-                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
-                </div><!-- .card-body -->
-              </a>   
-            </div><!-- .card -->
-
-            <div class="card m-3">
-              <a href="servicios.php">
-                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
-                <div class="card-body">
-                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
-                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
-                </div><!-- .card-body -->
-              </a>   
-            </div><!-- .card -->
-
-            <div class="card m-3">
-              <a href="servicios.php">
-                <img src="img/c001ap_mini.png" class="card-img-top" alt="Servicio">
-                <div class="card-body">
-                  <h4 class="card-title text-center text-uppercase">Servicio 1</h4>
-                  <p class="card-text text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam itaque repudiandae provident voluptas</p>
+                  <h4 class="card-title text-center">Auto-hemoterapia mayor</h4>
                 </div><!-- .card-body -->
               </a>   
             </div><!-- .card -->
@@ -346,32 +316,6 @@
         </div><!-- .center -->
 
     </div><!-- .container -->
-
-        <!-- <div class="container">
-            
-
-            <div class="owl-carousel">
-                <a href="#" data-toggle="modal" data-target="#terapia1">
-                    <h4>Autohemoterapia mayor</h4>
-                    <img src="images/foto6.jpeg" alt="Autohemoterapia mayor">
-                </a>
-
-                <a href="#" data-toggle="modal" data-target="#terapia2">
-                    <h4>Autohemoterapia menor</h4>
-                    <img src="images/foto7.jpeg" alt="Autohemoterapia menor">
-                </a>
-
-                <a href="#" data-toggle="modal" data-target="#terapia3">
-                    <h4>Insuflación</h4>
-                    <img src="images/foto3.jpeg" alt="Insuflación">
-                </a>
-
-                <a href="#" data-toggle="modal" data-target="#terapia4">
-                    <h4>Inyección de ozono </h4>
-                    <img src="images/foto5.jpeg" alt="Inyección Ozono">
-                </a>
-            </div>
-        </div> -->
     </section>
 <!--------------------------------------------------------->
 
@@ -525,10 +469,6 @@
     <!--------------------------------------------------------->
 
 
-
-
-
-
     <!-------------------------- CONTACTO -------------------------->
       <?php
           include 'templates/contacto.php';
@@ -536,8 +476,7 @@
     <!------------------------------------------------------------->
 
 
-    <!------------------- BLOG Y TESTIMONIALES -------------------->
-    <!------------------------------------------------------------->
+    <!------------------- MODALES -------------------->
 
     <!-- Modal Contacto -->
     <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-hidden="true">
@@ -571,6 +510,299 @@
               </div><!-- .modal-content -->
           </div><!-- .modal-dialog -->
       </div><!-- .modal -->
+
+
+      <!-- MODALES TERAPIAS -->
+<!-- Modal Terapia 1: Autohemoterapia mayor  -->
+<div class="modal fade" id="terapia1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Autohemoterapia mayor</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                      Sirve para la revitalización, en el tratamiento de trastornos circulatorios y enfermedades producidas por virus y para la inmuno activación general.
+                      El ozono reacciona completamente haciendo que las células de la sangre, blancas y rojas, activen sus actividades vitales, esto es igual al metabolismo.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Terapia 2: Autohemoterapia menor  -->
+<div class="modal fade" id="terapia2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header align-items-left">
+                <h4 class="modal-title">Autohemoterapia menor</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        Al igual que la Autohemoterapia mayor, es una aplicación de ozono a través de la ruta intramuscular para inmuno activación inespecífica o revitalización. Éste método puede utilizarse en enfermedades alérgicas o en una forma general para mejorar la resistencia inherente del cuerpo.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Terapia 3: Insuflación  -->
+<div class="modal fade" id="terapia3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Insuflación</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        La aplicación de ozono por insuflación no es un inconveniente, de hecho, el paciente no siente absolutamente nada ya que el gas de ozono es directamente absorbido por las membranas sensitivas. Este método se realiza con métodos totalmente higiénicos y prácticos ya que incluso el paciente puede aplicárselos por sí mismo. Éste método se ha incrementado principalmente para ayudar a los procesos de revitalización general.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Terapia 4: Psicorerapia  -->
+<div class="modal fade" id="terapia4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Inyección de ozono</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        Las inyecciones de ozono, como el término lo implican, consta de inyectar cuidadosamente ozono por varias vías, este proceso lo debe realizar un especialista entrenado. Éste método se recomienda para el tratamiento de las articulaciones dolorosas o inflamadas (artritis, artrosis recurrente y en rigidez patológica general)
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODALES ENFERMEDADES -->
+<!-- Modal Aplicación 1: Trastornos circulatorios  -->
+<div class="modal fade" id="modalApp1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Trastornos circulatorios</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        El ozono muestra gran eficacia en los trastornos circulatorios arteriales, caracterizados por una sensación de pesadez y frio, y/o dolores en las piernas, en especial al caminar. De hecho, los pacientes afectados solo son capaces de cubrir distancias relativamente cortas, lo que es una señal de alarma. En realidad, este tratamiento ha evitado amputaciones en un gran número de casos registrados clínicamente.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Aplicación 2: Cancer  -->
+<div class="modal fade" id="modalApp2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Cancer</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        En este contexto, debe enfatizarse que el ozono no es curativo, es solo una medida complementaria aplicada además de los métodos estandarizados. Habiendo dicho esto, sin embargo, existen casos de historias clínicas que han demostrado (durante las últimas décadas) que el ozono puede producir unos resultados impresionantes relacionados a su función como agente activo inmunoactivo.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Aplicación 3: Lesiones infectadas  -->
+<div class="modal fade" id="modalApp3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Lesiones infectadas</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        En ulceras “de pierna abierta”, lesiones por permanecer en cama y en quemaduras, se ha encontrado que son tratadas con éxito por el ozono en prácticamente todos los casos. Los estudios clínicos han demostrado que incluso en casos muy severos (gangrena o necrosis local) se puede obtener la restauración.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Aplicación 4: Geriatría  -->
+<div class="modal fade" id="modalApp4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Geriatría (condiciones relacionadas con la edad)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        Gracias a su capacidad de revitalización general, el ozono se puede usar con éxito en casos de concentración pobre, olvidos, reducción general del desempeño físico e incluso mental, inseguridad al caminar, vértigo o problemas clínicos de mareo. Las personas de edad en particular experimentan una mejora en su calidad de vida y en su bienestar.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Aplicación 5: Degeneración macular  -->
+<div class="modal fade" id="modalApp5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Degeneración macular</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        El ozono también se usa para ejercer una influencia positiva en la vista deficiente o pobre (agudeza visual deficiente o en decremento) debido a un deterioro retinal relacionado con la edad.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Aplicación 6: Condiciones intestinales  -->
+<div class="modal fade" id="modalApp6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Condiciones intestinales</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        Condiciones inflamatorias del intestino grueso (colitis) el intestino delgado, fístulas y proctitis (inflamación en el recto). Una aplicación local del gas de ozono introducida a través de la insuflación, otorga un alivio rápido a muchas de estas condiciones inconvenientes y no placenteras.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Aplicación 7: Enfermedades producidas por virus  -->
+<div class="modal fade" id="modalApp7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Enfermedades producidas por virus</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        Una serie de ensayos clínicos y de estudios farmacológicos han sido capaces de demostrar el buen éxito, en porcentaje del tratamiento de ozono en el caso de condiciones producidas por virus que son dolorosas, tales como la hepatitis y el herpes. El final de la enfermedad se acorta en gran medida, la curación es más eficiente, y el paciente rápidamente regresa a su bienestar original.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Aplicación 8: Reumatismo/Artritis  -->
+<div class="modal fade" id="modalApp8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Reumatismo/Artritis</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        En el complejo total de las condiciones “reumáticas/artríticas”, las cuales están relacionadas todas con el esqueleto y con el sistema locomotor a un grado que varía de una en una, el ozono ha tenido éxito para provocar que se retire el dolor y la inflamación. El tratamiento repetido puede incluso producir una restauración permanente.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/trisquelLogo4.png" alt="" width="200" class="img-fluid m-x-auto m-t-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
       <!---------------------------------------------------------------------->
 
     <!------------- FOOTER, SCRIPTS y CIERRE DE HTML -------------->

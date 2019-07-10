@@ -6,6 +6,37 @@
     --hoover: #2a3238;
 }
 
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+
+
 @font-face {
     font-family: 'gothamrounded-book';
     src: url(../fonts/gothamrounded-book.otf);
@@ -480,6 +511,52 @@ body {
     font-size: 1.2rem;
 }
 
+
+/* SERVICIOS */
+
+/* COLLAPSE BELLEZA */
+#belleza .card-header {
+    background-color: #394651;
+    padding: 0;
+}
+
+#belleza .card-header .btn-link {
+    color: #ffffff;
+    font-size: 1.6rem;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#belleza .card-header .btn-link:hover {
+    background-color: #2a3238;
+}
+
+#belleza .card-body {
+    font-size: 1.2rem;
+}
+
+/* COLLAPSE SALUD */
+#salud .card-header {
+    background-color: #394651;
+    padding: 0;
+}
+
+#salud .card-header .btn-link {
+    color: #ffffff;
+    font-size: 1.6rem;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#salud .card-header .btn-link:hover {
+    background-color: #2a3238;
+}
+
+#salud .card-body {
+    font-size: 1.2rem;
+}
 
 
 /* 404 */

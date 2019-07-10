@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /ozonocare.com.mx/sitemap.xml
+
+Sitemap: http://ozonocare.com.mx/sitemap.xml
